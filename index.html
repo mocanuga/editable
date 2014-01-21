@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Editable</title>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>
+                Editable form
+            </legend>
+            <div class="field">
+                <p class="editable input remote" id="fieldName">Text</p>
+            </div>
+        </fieldset>
+    </form>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/editable/js/editable.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.editable').editable({
+                service: '/'
+            });
+        })
+    </script>
+</body>
+</html>
